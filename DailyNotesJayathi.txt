@@ -1,0 +1,368 @@
+1,0---on,off----------------->Ascii/Unicode....
+
+programming lang:-to communicate with the machine.
+
+programs:-set of instru's/commands.
+
+
+	pop(procedure oriented pr'g)					oop(Object oriented pr'g)
+			
+	basic,fortane,cobal........						java,python,c++,.....
+						
+	
+	
+	security:-Abstraction,Encapsulation.
+	
+	performance:-Inheritance,polymorphism.
+	
+	
+	platform independent	:-write once and run anywhere
+	
+	Garbage Collector		:-
+	
+	java:-
+	
+	
+	greentalk-------->oak------------>java(.java)
+	(.gt)
+	
+	jdk -1.0							---->jdk 22
+	
+	
+	james Gosling
+	
+	
+	3 editions:-
+	
+	
+	(1)jse/j2se:-(no client -server ) standalone app		:-calculator		[core java]
+	
+	
+	(2)jee/j2ee:-(client-server)distributed app             :-zomato			{Adv java}
+	
+	
+	(3)jme/j2me:-mobile app		[core java]							
+	
+	
+	aplahbets  ----->keywords
+	
+	
+	a-97    A-124
+	
+	
+	shortcuts:-	
+		
+		suggesstions :- ctrl + space
+		
+		comments  :- ctrl + /
+		
+		format :-ctrl +f
+		
+		imports :- ctrl +shift +o
+		
+		
+		
+	
+	
+	
+	variables:-
+	
+		syntax:-	datatype varname;			//declaration of var
+		
+					datatype varname = value;		//initialization of a var
+					
+					
+			local variables 					global var's
+										instance 				static
+syntax's:-
+=========										
+										
+static:-	static	datatype varname = value;
+
+instance:-	datatype varname = value;
+
+access:-
+======
+
+static:-we should use the  class reference for the static prop's
+
+instance:- we should use the object reference for the instance prop's
+
+
+				object creation:-
+				
+				classname objname = new classname();
+
+memory space:-
+============
+static:-we will gets the memory space only once when the class loads into the jvm
+
+instance:-we will gets the memory space for every object creation
+
+In memory:-
+==========
+
+static:-	method area
+
+instance:-	heap area
+
+when to use:-
+=============
+
+static:-	common data
+
+instance:-	unique data
+
+
+Operators:-
+
+				a+b-->operand
+				
+uninary  
+
+ULTRA AB
+
+if else,switch,while,do while,for
+
+method :- Set of statments where all together will performs a single task.
+
+	syntax/singnature ;-
+	
+			accessmodifier  returntype methodname(paramss...){
+			//body
+			
+			}
+		2 types:-
+		
+static method:-
+								
+		accessmodifier static returntype methodname(paramss...){		//void
+			//body  ---------->return 
+			
+			}
+
+
+
+instance/dynamic method:-
+		accessmodifier  returntype methodname(paramss...){
+			//body
+			
+			}
+	
+	Inheritance:-Accquiring parent class to the child class.
+					*Code Reuseability
+	
+	extends							implements
+
+class---->class						interface ---->class
+					
+					
+					
+	class A{			---->parent /super
+	100 methods
+	
+	}
+	
+	class B{			----->child/sub/base
+	
+	100 methods
+	}
+	
+	
+	class A{			class B{
+	
+	add(a,b){			add(a,b){
+	a*b;				a+b;
+	}					}
+	
+	}                   }
+	
+	
+	class C extends A,B{
+	
+	OBJ.ADD(2,3);			
+	
+	}
+	
+	
+	
+	*MI in java is not supported @ class level.
+	
+	*Mi in java is supported @interface Level.
+	
+	
+	*For every java class the default parent class is "java.lang.Object"
+	
+	*For every java file the default package is "java.lang"
+	
+	
+	methods:-2 types
+	
+	(1)concrete methods :- if the method is having method body/implementation.
+	
+	syntax:-    accessmodifier  returntype methodname(paramss...){
+				//body
+			
+				}
+	
+	
+	(2)abstract methods :-if the method is not having the method body/implementation.
+	
+	syntax:-	 accessmodifier  returntype methodname(paramss...);
+	
+	
+	
+	class  :- it is the combination of only concrete methods.
+	
+	abstract class:- it is the combination of both concrete methods nd abstract methods
+	
+	interface  :- it is the combination of only abstract methods.
+	
+	
+	
+	Abstraction:- hiding the implementation
+	============
+	
+			*security
+			
+	class :- 0%    abstract class - 0-100%  interface - 100%
+	
+	
+	polymorphism:-
+	=============
+					*Code reuseability
+						
+	
+	(1)methodoverloading:-the method name is same but the parameters are different
+							(a)type of params..
+							(b)no:-of params..
+							(c)order of params..
+	
+	(2)methodoverriding :-the method name is same but the method body is different
+			
+	class Parent{
+	 100 cr()
+	 
+	 marriage (){
+	 kajol
+	 }
+	}
+	
+	class Child extends parent{
+	100 cr()
+	 
+	 @Override
+	 marriage (){
+	deepika
+	 }
+	
+	
+	}
+	
+	Encapsulation:-It is used to wrap the similar data into a single entity.
+	==============
+							*security
+							
+		public  private  default  protected
+		
+		
+		
+		Constructor:-To initialize object
+		===========
+		
+		default constr :-
+		
+					accessmodifier classname(){
+					//body
+					}
+		
+		parametrized constr :-
+					
+					accessmodifier classname(params...){
+					//body
+					}
+					
+			exceptions:-
+			
+			try{
+			//error code
+			}
+			catch(){
+			}
+			
+					Throwable
+		exceptions						error
+	checked		unchecked
+	
+	
+	Arrays:-
+	
+	3 ways :-
+	
+		(1)int arranme[] = new int[9];
+		
+		arrname[7] = 45;
+		
+		(2)int arranme[] = {12,4,5,6};
+		
+		(3)int arrname[] =new int[]{12,4,5,6};
+		
+		
+		limitations :-
+		
+		(1)we need to give the array in prior,it can't be altered
+		
+		(2)it will allows only homogenous data
+		
+		(3)No utility methods.
+		
+		
+		
+		
+	
+	collections Framework:-		java.util.*;
+	
+	
+		(1)Array size can be changed ,even after declaring it.
+		
+		(2)it will allows both heterogenous/ homogenous data
+		
+		(3)Lot's utility methods.
+	
+	
+	Strings:-
+	=======
+	
+	
+	String varname = value;
+	
+		String 					StringBuffer					StringBuilder
+		immutable				mutable							mutable
+								Sync							NotSync
+								
+	FileHandling:- io
+	============
+
+	To create a file :- File
+	
+	To write into a file :- FileWriter
+							BufferedWriter
+							PrintWriter
+							
+	To read from a file :- FileReader
+						BufferedReader
+							
+							
+	Serialization :- converting object data into byte data
+	=============
+
+	Deserialization :- converting byte data into object data
+		
+		
+
+
+	Interface :-only collection of abstract method		
+			
+	Functional Interface :- Sam(Single abstract Method)
+	
+	Marker Interface :- zero methods
