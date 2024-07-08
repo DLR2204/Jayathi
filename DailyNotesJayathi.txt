@@ -366,3 +366,117 @@ class---->class						interface ---->class
 	Functional Interface :- Sam(Single abstract Method)
 	
 	Marker Interface :- zero methods
+	
+	
+								Database :-
+								=========
+								
+	Data :- Raw info of any real world entities.
+	
+	DataBase :- To store the data for future access permenantly in a secured and organised manner.
+	
+								
+	apples 		343
+	
+	rose		345
+	
+	tulips		387			
+				
+	oranges 	345		
+
+			
+			
+	oracle(db) -------->RDBMS :- tables(rows(records) + colums(fields)) ----->sql 
+	
+	
+	Mysql(db)----------->RBDMS ---------------------->MySql
+	
+	
+	
+		Query :-like a command to perform any operation in the db.
+		
+	
+	DDL(Data Definition lang) :-create ,alter ,drop,rename,truncate (auto-commited)
+	
+	DML(Data Manipulation lang) :-insert,update,delete	(not auto-commited)
+	
+	DRL (Data Retrival Lang):-select
+	
+	DCL(Data Control Lang) :-grant
+	
+	TCL(Transactional Control Lang) :-commit,rollback
+				
+	
+	drop :- deletes the entire table and the records
+	
+	truncate :-deletes all records but not the table.
+	
+	delete :- deletes the selected rows.
+	
+									jdbc(java database connectivity)
+									====
+									
+		core java			+					database
+	
+	(1)Loading driver classes
+	
+	(2)Creating the connection
+	
+	(3)Create the statement
+	
+	(4)Execute the statement
+	
+	(5)close the connections
+	
+	
+	Limitations of jdbc :-
+	
+	(1)Exception classes
+	
+	(2)Queires 
+	
+	(3)Table creation
+	
+	(4)same file for db prop's ,for the code logic
+	
+	(5)Duplicate code
+	
+	
+	jpa(java persistence API):- [Specifications]
+	------------------------
+	
+	(1)No Exception classes
+	
+	(2)No Queires 
+	
+	(3)No Table creation
+	
+	(4)diff file for db prop's ,for the code logic
+	
+	(5)No duplicate code
+	
+	Orm Tools(Object Relational Mapping)-> [Implementaions]
+	--------------------------------------
+	hibernate,ecllipseLink,topLink,ibaits.....
+	
+	*Query equivalent methods
+	
+	*class ------>table
+	
+	 variables ---->columns
+	
+	 object ------>rows
+	
+	* db props---->persistence.xml ,java---->java packages
+	
+	
+	
+	Persistence----->persistence.xml ---------->
+	
+	
+	<persistence>
+	<persistence-unit id=">
+	
+	
+	</persistence-unit>
+	</persistence>
